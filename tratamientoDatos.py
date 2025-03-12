@@ -54,7 +54,6 @@ def calculate_mutual_information(csp_features, labels):
     # Ensure labels are in the correct shape
     combined_labels = np.concatenate([np.full(filtered_data[key].shape[0], label) for key, label in zip(filtered_data.keys(), labels)])
 
-
     # Calculate mutual information
     mi_score = mutual_info_classif(csp_features, combined_labels, discrete_features=True)
     
