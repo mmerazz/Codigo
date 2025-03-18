@@ -30,7 +30,7 @@ def detect_clench(sample):
     """Adaptive threshold clench detection with cooldown buffer."""
     global clench_detected, last_clench_time
 
-    emg_signal = np.abs(sample.channels_data[0])  # Use first channel
+    emg_signal = sample.channels_data;  # Use all chanels
 
     # Maintain a rolling window of the last second of data
     emg_window.append(emg_signal)
