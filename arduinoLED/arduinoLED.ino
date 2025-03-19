@@ -1,3 +1,4 @@
+/*
 #define led_pin 5  // Define the LED pin
 
 bool ledState = false;  // Track LED state
@@ -17,4 +18,4 @@ void loop() {
         }
     }
 }
-
+*/
